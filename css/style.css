@@ -5,3 +5,10 @@
   .primary{
     background-color: var(--primary);
   }
+
+  .banner{
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100vw;
+  }
