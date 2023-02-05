@@ -1,340 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beans Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="./js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("LNJSV7aoTNX9DbxSZ");
+      })();
+    </script>
+  </head>
+  <body>
     <!-- NAVBAR  -->
 
     <!-- ---------------navbar starts ----------------- -->
-    <nav class="navbar navbar-expand-md navbar-dark primary">
-        <div class="container">
-            <a href="" class="navbar-brand">Beans</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navBar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#team" class="nav-link">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div> 
+    <nav class="navbar navbar-expand-md navbar-light light">
+      <div class="container">
+        <a href="" class="navbar-brand"
+          ><img src="./images/beans.jpg" height="60px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#team" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- -----------navbar-ends----------------------- -->
-
 
     <!-- HERO SECTION -->
 
     <!-- -----------------hero-section starts--------------- -->
     <header id="home">
-      <img class="banner" src="/images/hero-bg.jpg" alt="img">
+      <img class="banner" src="/images/hero-bg.jpg" alt="img" />
     </header>
 
     <!-- ---------------hero section ends ---------------- -->
 
+    <!-- ABOUT SECTION -->
 
-
-
-   <!-- ABOUT SECTION -->
-
-   <!-- ------------------------about section starts ----------------  -->
+    <!-- ------------------------about section starts ----------------  -->
     <section id="about" class="bg-light py-5">
-        <div class="container">
-          <div class="text-center py-5">
+      <div class="container">
+        <div class="text-center py-5">
+          <h2
+            class="fw-bolder border-bottom border-info border-3 d-inline-block"
+            data-aos="zoom-in"
+          >
+            ABOUT
+          </h2>
+        </div>
+        <div class="col-xl-8 mx-auto mb-5">
+          <div class="accordion">
+            <!-- single Accordion -->
+            <div
+              class="accordion-item rounded-3 shadow-sm mb-3"
+              data-aos="fade-up"
+            >
+              <!-- Accordion header -->
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button
+                  class="accordion-button text-light bg-info fs-7"
+                  data-bs-target="#accordion-1"
+                  data-bs-toggle="collapse"
+                >
+                  MISSION STATEMENT
+                </button>
+              </h5>
+              <!-- Accordion Body -->
+              <div class="accordion-collapse collapsed show" id="accordion-1">
+                <div class="accordion-body">
+                  Beans Inc is committed to delivering exceptional customer
+                  experiences through the seamless integration of technology and
+                  hard work. Our goal is to continuously innovate and improve
+                  our property management, real estate, and social communication
+                  services to meet the evolving needs of our customers.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item rounded-3 shadow-sm mb-3"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <!-- Accordion header -->
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button
+                  class="accordion-button text-light bg-info fs-7"
+                  data-bs-target="#accordion-2"
+                  data-bs-toggle="collapse"
+                >
+                  VISION
+                </button>
+              </h5>
+              <!-- Accordion Body -->
+              <div class="accordion-collapse collapse" id="accordion-2">
+                <div class="accordion-body">
+                  At Beans Inc, we envision a future where technology and hard
+                  work are seamlessly integrated to deliver unparalleled
+                  customer satisfaction. We aim to be the leading conglomerate
+                  in our industries, recognized for our commitment to excellence
+                  and customer-centric approach.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item rounded-3 shadow-sm mb-3"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <!-- Accordion header -->
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button
+                  class="accordion-button text-light bg-info fs-7"
+                  data-bs-target="#accordion-3"
+                  data-bs-toggle="collapse"
+                >
+                  BACKGROUND
+                </button>
+              </h5>
+              <!-- Accordion Body -->
+              <div class="accordion-collapse collapse" id="accordion-3">
+                <div class="accordion-body">
+                  The story of Beans Inc began in a small house in the Richmond
+                  virginia where four friends, all passionate developers, came
+                  together with a shared vision to change the world through
+                  technology. Despite our differing backgrounds and skill sets,
+                  we bonded over our love for coding and our desire to create
+                  meaningful solutions that would improve people's lives. As we
+                  worked on various projects together, we discovered our their
+                  skills were complementary and that we were stronger as a team
+                  than as individuals. We quickly realized that they could
+                  achieve much more by combining our expertise and resources.
+                  And so, Beans Inc was born. At first, we focused on creating
+                  social communication platforms that would connect people in
+                  new and innovative ways. We saw the potential for technology
+                  to bring people together and break down barriers, and we were
+                  determined to make a positive impact in this area. Our first
+                  project was a hit, and we quickly gained a reputation as
+                  experts in the field of social communication. However, our
+                  ambitions extended beyond just social communication. We saw an
+                  opportunity to leverage our technical abilities to provide
+                  customized solutions to businesses in a variety of industries,
+                  including real estate. We knew that our combined expertise in
+                  both technology and real estate would allow us to provide
+                  unparalleled services to our clients. With each project we
+                  undertook, we grew closer, and Beans Inc grew in both size and
+                  reputation. Today, Beans Inc is a thriving conglomerate,
+                  providing technology solutions to businesses across the world.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item rounded-3 shadow-sm mb-3"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <!-- Accordion header -->
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button
+                  class="accordion-button text-light bg-info fs-7"
+                  data-bs-target="#accordion-4"
+                  data-bs-toggle="collapse"
+                >
+                  COMPANY INTEREST
+                </button>
+              </h5>
+              <!-- Accordion Body -->
+              <div class="accordion-collapse collapse" id="accordion-4">
+                <div class="accordion-body">
+                  Our purpose at Beans Inc is to provide value to our customers
+                  and stakeholders through innovative, customer-oriented
+                  solutions in property management, real estate, and social
+                  communication. We strive to create a better future by
+                  leveraging technology to make our services more accessible,
+                  efficient, and effective for all.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends ---------------------->
+
+    <!-- TEAM SECTION STARTS -->
+    <section class="py-5" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="py-5 text-center">
             <h2
               class="fw-bolder border-bottom border-info border-3 d-inline-block"
               data-aos="zoom-in"
             >
-              ABOUT
+              MEET THE TEAM
             </h2>
           </div>
-          <div class="col-xl-8 mx-auto mb-5">
-            <div class="accordion">
-              <!-- single Accordion -->
-              <div
-                class="accordion-item rounded-3 shadow-sm mb-3"
-                data-aos="fade-up"
-              >
-                <!-- Accordion header -->
-                <h5 class="accordion-header rounded-3 overflow-hidden  ">
-                  <button
-                    class="accordion-button text-light bg-info fs-7"
-                    data-bs-target="#accordion-1"
-                    data-bs-toggle="collapse"
-                  >
-                    MISSION STATEMENT
-                  </button>
-                </h5>
-                <!-- Accordion Body -->
-                <div class="accordion-collapse collapsed show" id="accordion-1">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint cum praesentium cumque voluptatem maxime
-                     vel culpa iste quidem ea amet nam vero, laudantium dolore ut.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="accordion-item rounded-3 shadow-sm mb-3"
-                data-aos="fade-up"
-                data-aos-delay="150"
-              >
-                <!-- Accordion header -->
-                <h5 class="accordion-header rounded-3 overflow-hidden">
-                  <button
-                    class="accordion-button text-light bg-info fs-7"
-                    data-bs-target="#accordion-2"
-                    data-bs-toggle="collapse"
-                  >
-                    VISION
-                  </button>
-                </h5>
-                <!-- Accordion Body -->
-                <div class="accordion-collapse collapse" id="accordion-2">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid sint similique minima doloribus nam nihil sequi
-                    dolores pariatur, ipsa suscipit esse molestiae. Omnis tempore
-                    quam saepe voluptate! Dolorum, natus voluptatem. Debitis quis
-                    reprehenderit ex ipsa.
-                  </div>
-                </div>
-              </div>
-  
-              <div
-                class="accordion-item rounded-3 shadow-sm mb-3"
-                data-aos="fade-up"
-                data-aos-delay="250"
-              >
-                <!-- Accordion header -->
-                <h5 class="accordion-header rounded-3 overflow-hidden">
-                  <button
-                    class="accordion-button text-light bg-info fs-7"
-                    data-bs-target="#accordion-3"
-                    data-bs-toggle="collapse"
-                  >
-                   BACKGROUND
-                  </button>
-                </h5>
-                <!-- Accordion Body -->
-                <div class="accordion-collapse collapse" id="accordion-3">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid sint similique minima doloribus nam nihil sequi
-                    dolores pariatur, ipsa suscipit esse molestiae. Omnis tempore
-                    quam saepe voluptate! Dolorum, natus voluptatem. Debitis quis
-                    reprehenderit ex ipsa.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="accordion-item rounded-3 shadow-sm mb-3"
-                data-aos="fade-up"
-                data-aos-delay="350"
-              >
-                <!-- Accordion header -->
-                <h5 class="accordion-header rounded-3 overflow-hidden">
-                  <button
-                    class="accordion-button text-light bg-info fs-7"
-                    data-bs-target="#accordion-4"
-                    data-bs-toggle="collapse"
-                  >
-                    COMPANY INTEREST
-                  </button>
-                </h5>
-                <!-- Accordion Body -->
-                <div class="accordion-collapse collapse" id="accordion-4">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid sint similique minima doloribus nam nihil sequi
-                    dolores pariatur, ipsa suscipit esse molestiae. Omnis tempore
-                    quam saepe voluptate! Dolorum, natus voluptatem. Debitis quis
-                    reprehenderit ex ipsa.
-                  </div>
-                </div>
+        </div>
+        <div class="d-flex align-items-end">
+          <div class="col-12 text-light bg-dark p-5 m-5">
+            <div class="col-3 p-3 me-5">
+              <img
+                class="img-fluid m-2"
+                style="float: left"
+                src="images/eleazer.jpeg"
+                alt="pic"
+              />
+            </div>
+            <div class="col-9 ms-auto text-start">
+              <div class="m-2">
+                Eleazer Afotey is a Software Engineer who graduated with a
+                Bachelor of Science in Computer Science from the University of
+                Richmond. Growing up in Ghana, Eleazer has always believed in
+                the efficacy of Software in solving human problems. He’s worked
+                with different technologies including Java, Python, javascript,
+                and C++ and some of their respective frameworks. Eleazer has
+                extensive experience building software solutions for firms and
+                is currently working with Kinsale Insurance. Even as a
+                developer, he has a keen interest in creative design and spends
+                time designing the front end of software and applications he
+                builds. Eventually, Ely plans on unearthing the potential of
+                machine learning and artificial intelligence to create more
+                sophisticated solutions for strenuous problems.
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- about section ends ---------------------->
+        <div class="d-flex">
+          <div class="col-12 text-light bg-dark p-5 m-5">
+            <div class="col-3 p-2 me-5">
+              <img
+                class="img-fluid"
+                style="float: left"
+                src="images/nat.jpeg"
+                alt="pic"
+              />
+            </div>
+            <div class="col-9 ms-auto text-start">
+              <div class="m-2">
+                Nathaniel Adjei is a computer science major at VCU. With his
+                experience working with several groups on school projects and
+                other personal projects, he developed entrepreneur skills and
+                the urge to provide amenities and services for his home Ghana.
+                Nathaniel believes Ghana has the potential of being great and
+                resourceful to other countries, this pushes him to make it an
+                agenda to do his best as possible to change the narrative with
+                his skills and knowledge in computers and technology. As a
+                computer scientist, he believes the future is already here.
+                Hence, Africa being able to have its technological resources and
+                not solely depend on the other part of the world is a must. This
+                encourages him to join heads with these great talents to come up
+                with an entity like BEANs.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-12 text-light bg-dark p-5 m-5">
+            <div class="col-3 p-2 me-5">
+              <img
+                class="img-fluid"
+                style="float: left"
+                src="images/bernard.jpeg"
+                alt="pic"
+              />
+            </div>
+            <div class="col-9 ms-auto text-start">
+              <div class="m-2">
+                Bernard Asare-Annan is one of the four founding members of
+                BEANs. He is a Bachelor’s and Associate's Degree holder in the
+                field of Computer Science and has helped develop a vulnerability
+                reporting and assessment system to be used by the Mecklenburg
+                County of Richmond, Virginia, USA. During his early years moved
+                back and forth often between Ghana and America and as he grew
+                older and began to understand the world more he was disturbed by
+                how the way of life was drastically different, especially on the
+                basic scale of things. This ignited a flame in his heart to
+                bring things up to par. IT is the path of the future and even
+                though Africa might be a bit lacking in the financial and
+                infrastructural aspects, he will do everything to make sure
+                Africa does not fall behind in IT..
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-end">
+          <div class="col-12 text-light bg-dark p-5 m-5">
+            <div class="col-3 p-2 me-5">
+              <img
+                class="img-fluid"
+                style="float: left"
+                src="images/aubrey.jpeg"
+                alt="pic"
+              />
+            </div>
+            <div class="col-9 ms-auto text-start">
+              <div class="m-2">
+                Aubrey Macarious Clottey is a software engineer and a UI/UX
+                designer with extensive experience and managerial skills working
+                as a freelancer for 3 years. He has worked on different projects
+                for many companies. As a senior software engineer, he is
+                responsible for the development and maintenance of management
+                system software needed by companies. Aubrey Macaruous Clottey
+                has a professional Diploma in software engineering from NIIT
+                school(2021).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- TEAM SECTION ENDS -->
 
+    <!-- OUR SERVICES SECTION -->
+    <section class="py-5" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="py-5 text-center">
+            <h2
+              class="fw-bolder border-bottom border-info border-3 d-inline-block"
+              data-aos="zoom-in"
+            >
+              OUR SERVICES
+            </h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-12">
+            <img src="images/pic-3.jpg" alt="pic-3" />
+            <img src="images/pic-1.jpg" alt="pic-1" />
+          </div>
+          <div class="col-12 mt-1">
+            <img src="images/pic-2.jpg" alt="pic-2" />
+            <img src="images/pic-4.jpg" alt="pic-4" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- TEAM SECTION STARTS -->
-      <section class="py-5" id="team">
-        <div class="container">
-          <div class="row">
+    <!-- CONTACT ME SECTION BEGINS --------------------->
+    <section class="py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
             <div class="py-5 text-center">
-              <h2 class="fw-bolder border-bottom border-info border-3 d-inline-block "  data-aos="zoom-in">MEET THE TEAM</h2>
+              <h2
+                class="fw-bolder border-bottom border-info border-3 d-inline-block"
+                data-aos="zoom-in"
+              >
+                CONTACT US
+              </h2>
             </div>
-          </div>
-          <div class="d-flex">
-              <div class="col-12 text-light bg-dark p-5 m-5">
-                <div class="col-3 ">
-                  <img class="img-fluid" style="float: left;" src="images/nat.jpeg" alt="pic">
-  
-                </div>
-                <div class="col-9 m-5 ms-auto text-center">Nathaniel Adjei is a computer science major at VCU. With his experience working with several groups on school projects and other 
-                  personal projects, he developed entrepreneur skills and the urge to provide amenities and services for his home Ghana. Nathaniel believes 
-                  Ghana has the potential of being great and resourceful to other countries, this pushes him to make it an agenda to do his best as possible 
-                  to change the narrative with his skills and knowledge in computers and technology. As a computer scientist, he believes the future is already here.
-                   Hence, Africa being able to have its technological resources and not solely depend on the other part of the world is a must. This encourages 
-                   him to join heads with these great talents to come up with an entity like BEANs.</div>
+            <form
+              action="contact_php"
+              method="POST"
+              data-aos="fade-up"
+              class="bg-info p-3"
+            >
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-secondary small text-white border-light"
+                  placeholder="NAME: "
+                  required
+                  name="visitors_name"
+                  id="name"
+                />
               </div>
-          </div>
-          <div class="d-flex">
-            <div class="col-12 text-light bg-dark p-5 m-5">
-              <div class="col-3">
-                <img class="img-fluid" style="float: left;" src="images/bernard.jpeg" alt="pic">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-secondary small text-white border-light"
+                  placeholder="EMAIL: "
+                  required
+                  name="visitors_email"
+                  id="email"
+                />
               </div>
-              <div class="col-9 m-5 ms-auto text-center">Bernard Asare-Annan is one of the four founding members of BEANs. He is a Bachelor’s and Associate's Degree holder in the field of 
-                Computer Science and has helped develop a vulnerability reporting and assessment system to be used by the Mecklenburg County of Richmond, Virginia, USA. 
-                During his early years moved back and forth often between Ghana and America and as he grew older and began to understand the world more he was disturbed by 
-                how the way of life was drastically different, especially on the basic scale of things. This ignited a flame in his heart to bring things up to par.
-                 IT is the path of the future and even though Africa might be a bit lacking in the financial and infrastructural aspects, he will do everything to make sure 
-                 Africa does not fall behind in IT..</div>
-            </div>
-          </div>
-          <div class="d-flex align-items-end">
-            <div class="col-12 text-light bg-dark p-5 m-5">
-              <div class="col-3">
-                <img class="img-fluid" style="float: left;" src="images/aubrey.jpeg" alt="pic">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-secondary small text-white border-light"
+                  placeholder="PHONE NO:"
+                  required
+                  name="visitors_phone"
+                  id="phone_number"
+                />
               </div>
-              <div class="col-9 m-5 ms-auto text-center">Aubrey Macarious Clottey is a software engineer and a UI/UX designer with extensive experience and managerial skills working as a freelancer
-                 for 3 years. He has worked on different projects for many companies. As a senior software engineer, he is responsible for the development and maintenance of 
-                 management system software needed by companies. Aubrey Macaruous Clottey has a professional Diploma in software engineering from NIIT school(2021).</div>
-            </div>
-          </div>
-          <div class="d-flex align-items-end">
-            <div class="col-12 text-light bg-dark p-5 m-5">
-              <div class="col-3">
-                <img class="img-fluid m-2" style="float: left;" src="images/eleazer.jpeg" alt="pic">
+              <div class="mb-3">
+                <textarea
+                  name="visitors_message"
+                  id="message"
+                  rows="9"
+                  class="form-control bg-transparent border-secondary small text-white border-light"
+                  placeholder="Message..."
+                ></textarea>
               </div>
-              <div class="col-9 m-5 ms-auto text-center">Eleazer Afotey is a Software Engineer who graduated with a Bachelor of Science in Computer Science from the University of Richmond. Growing up in Ghana, 
-                Eleazer has always believed in the efficacy of Software in solving human problems. He’s worked with different technologies including Java, Python, javascript, and C++ and
-                 some of their respective frameworks. Eleazer has extensive experience building software solutions for firms and is currently working with Kinsale Insurance. Even as a developer, he has a keen 
-                 interest in creative design and spends time designing the front end of software and applications he builds. Eventually, Ely plans on unearthing the potential of machine learning and artificial 
-                 intelligence to create more sophisticated solutions for strenuous problems.</div>
-            </div>
+              <button
+                class="btn btn-dark text-white"
+                onclick="sendMail()"
+                type="submit"
+                id="submit-button"
+              >
+                SUBMIT
+              </button>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- TEAM SECTION ENDS -->
+    <!-- CONTACT ME SECTION ENDS ------------------------>
 
+    <!-- FOOTER STARTS ---------------------------------- -->
+    <footer class="bg-dark">
+      <div class="p-3">
+        <p class="samll fw-bold mb-0 pb-3 text-white text-center">
+          All Rights Reserved |
+          <a href="#" class="text-info text-decoration-none me-5"
+            >@BEANS 2022</a
+          >
+        </p>
+      </div>
+    </footer>
 
+    <!-- --------FOOTER ENDS----------------------------- -->
 
-      <!-- OUR SERVICES SECTION -->
-      <section class="py-5" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="py-5 text-center">
-              <h2 class="fw-bolder border-bottom border-info border-3 d-inline-block "  data-aos="zoom-in">OUR SERVICES</h2>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div class="col-12">
-              <img src="images/pic-3.jpg" alt="pic-3">
-              <img src="images/pic-1.jpg" alt="pic-1">
-            </div>
-            <div class="col-12 mt-1">
-              <img src="images/pic-2.jpg" alt="pic-2">
-              <img src="images/pic-4.jpg" alt="pic-4">
-            </div>
-          </div>
-        </div>
-      </section>
-
-           <!-- CONTACT ME SECTION BEGINS --------------------->
-    <section class=" py-5" id="contact">
-        <div class=" container">
-          <div class="row">
-            <div class="col-12">
-              <div class="py-5 text-center">
-                <h2 class="fw-bolder border-bottom border-info border-3 d-inline-block "  data-aos="zoom-in">CONTACT US</h2>
-              </div>
-              <form action="contact_php" method="POST"  data-aos="fade-up" class="bg-info p-3">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control bg-transparent border-secondary small text-white border-light"
-                    placeholder="NAME: "
-                    required
-                    name="visitors_name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control bg-transparent border-secondary small text-white border-light"
-                    placeholder="EMAIL: "
-                    required
-                    name="visitors_email"
-                  />
-                </div>
-                <div class="mb-3">
-                    <input
-                      type="email"
-                      class="form-control bg-transparent border-secondary small text-white border-light"
-                      placeholder="PHONE NO:"
-                      required
-                      name="visitors_phone"
-                    />
-                  </div>
-                <div class="mb-3">
-                  <textarea
-                    name="visitors_message"
-                    id=""
-                    rows="9"
-                    class="form-control bg-transparent border-secondary small text-white border-light"
-                    placeholder="Message..."
-                  ></textarea>
-                </div>
-                <button class="btn btn-dark text-white" type="submit" id="submit-button">
-                  SUBMIT
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <!-- CONTACT ME SECTION ENDS ------------------------>
-
-       <!-- FOOTER STARTS ---------------------------------- -->
-     <footer class="bg-dark">
-        <div
-          class="p-3"
-        >
-
-          <p class="samll fw-bold mb-0 pb-3 text-white text-center">
-            All Rights Reserved |
-            <a href="#" class="text-info text-decoration-none me-5">@BEANS 2022</a>
-          </p>
-        </div>
-      </footer>
-  
-      <!-- --------FOOTER ENDS----------------------------- -->
-    
     <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
