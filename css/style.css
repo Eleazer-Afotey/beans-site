@@ -9,6 +9,6 @@
   .banner{
     background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
-    height: 600px;
+    height: 90vh;
     width: 100%;
   }
