@@ -1,0 +1,63 @@
+body {
+    border: 1px solid #000;
+    background-color: #F2F1F1;
+}
+
+.navbar {
+    background-color: #F2F1F1;
+}
+
+.nav-item {
+    color: #000;
+    text-align: left;
+    font-family: Outfit;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 0.78125rem;
+    /* 62.5% */
+    letter-spacing: 0.0625rem;
+}
+
+.front-text {
+    color: #000;
+
+    /* H1 */
+    font-family: Outfit;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 4.375rem */
+    text-transform: capitalize;
+}
+
+.hero-inner-text{
+    color: #000;
+
+    /* BodyText */
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71875rem; /* 152.778% */
+  
+}
+
+.item-bg {
+    background-color: #F2F1F1;
+}
+.accordion-button{
+    background-color: #F2F1F1;
+
+}
+
+@media (screen) and (max-width = 348px){
+    #social-img-i, #social-img-tw, #social-img-fb {
+        width: 30px;
+    }
+    .mortgage-pic{
+        max-width: 200px;
+        float: left;
+    }
+}
